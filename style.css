@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    background-image: linear-gradient(145deg,#050A30,#5F093D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_box {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 60vh;
+    height: auto;
+    margin: 5vh;
+    padding: 5vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-size: 3vh;
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 0 0 20px rgb(186, 184, 184);
+}
+
+h1 {
+    color: white;
+    margin: 5vh;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(186, 184, 184);
+}
+
+#input {
+    height: 6vh;
+    border-radius: 20px;
+    width: 88%;
+    padding-left: 3vh;
+    background-color: rgba(128, 128, 128,.5);
+    border: none;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+#btn {
+    height: 6vh;
+    border-radius: 20px;
+    font-weight: bolder;
+    padding-left: 0;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    position: absolute;
+    left: 74%;
+    background-color: #7DF9FF;
+    border: 1px solid black;
+    font-size: 2.5vh;
+}
+
+    #btn:hover {
+        background-color: black;
+        color: #7DF9FF;
+        border: 2px solid #7DF9FF;
+    }
+
+#ul {
+    margin-top: 6vh;
+    list-style-type: none;
+}
+
+li {
+    background-color: transparent;
+    height: auto;
+    color: white;
+    margin-top: 2vh;
+    padding: 2vh;
+    border-radius: 10px;
+    border: 2px solid #7DF9FF;
+}
+
+    li button {
+        background-color: transparent;
+        border-color: transparent;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 1vh;
+    }
+
+        li button:hover {
+            box-shadow: 0 0 5px white;
+            border-radius: 10%;
+        }
+
+    li p {
+        width: 70%;
+        display: inline-block;
+        margin-right: 1vh;
+        overflow-x: auto;
+        text-decoration: dashed;
+        margin-left: 1vh;
+    }
+
+        li p::-webkit-scrollbar {
+            display: none;
+        }
+
+.img {
+    height: 4vh;
+    width: 4vh;
+}
+
+/* Responsiveness*/
+@media screen and (max-width:600px) {
+    #btn {
+        height: 4vh;
+        font-size: 2vh;
+    }
+
+    .main_box {
+        width: 40vh;
+        margin: .3vh;
+        padding: 2vh;
+        margin-top: 5vh;
+    }
+
+    h1 {
+        font-size: 2.5vh;
+    }
+
+    #input {
+        width: 90%;
+        height: 4vh;
+    }
+
+    li p {
+        width: 66%;
+        font-size: 2.5vh;
+    }
+
+    li .img {
+        height: 3vh;
+        width: 3vh;
+    }
+
+    li {
+        padding: .5vh;
+    }
+}
